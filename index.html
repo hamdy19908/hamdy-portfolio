@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حمدي أيّمن | مهندس برمجيات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+        <p>جاري التحميل...</p>
+    </div>
+
+    <div id="particles-js"></div>
+    
+    <header class="fixed-header">
+        <div class="header-container">
+            <!-- الشعار مع الاسم -->
+            <div class="branding">
+                <div class="logo-circle">
+                    HA
+                </div>
+                <div class="name-title">
+                    <h1>Hamdy Ayman</h1>
+                    <p>Software Engineer</p>
+                </div>
+            </div>
+    
+            <!-- قائمة التنقل -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">عنّي</a></li>
+                    <li><a href="#skills" class="nav-link">المهارات</a></li>
+                    <li><a href="#projects" class="nav-link">المشاريع</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بي</a></li>
+                </ul>
+            </nav>
+    
+            <!-- زر القائمة المختصرة للجوّال -->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img src="profile-image.jpg" alt="Hamdy Ayman" class="profile-image">
+                    <div class="profile-border"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="animated-text">مرحبًا، أنا <span class="highlight">Hamdy</span></h1>
+                    <h2 class="typing">مهندس برمجيات <span class="typing-cursor">|</span></h2>
+                    <h2>أحول الأفكارك إلى حلول برمجية مبتكرة</h2>
+                    <a href="#projects" class="btn btn-3d">عرض أعمالي</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>عنّي</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>من أنا؟</h3>
+                    <p>أنا مهندس برمجيات محترف بخبرة تزيد عن سنه ونصف في مجال تطوير البرمجيات. متخصص في إنشاء تطبيقات ويب وتطبيقات الهاتف باستخدام أحدث التقنيات مثل React, Node.js, وFlutter.</p>
+                    <p>أحب تحويل الأفكار المعقدة إلى حلول برمجية بسيطة وفعالة. لدي شغف كبير بتعلم التقنيات الجديدة وتحسين مهاراتي باستمرار.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">الاسم:</span>
+                            <span class="info-value">حمدي أيّمن</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">البريد:</span>
+                            <span class="info-value">hamdy8888.ah@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">الخبرة:</span>
+                            <span class="info-value">1+ سنوات</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">البلد:</span>
+                            <span class="info-value">مصر</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2>المهارات</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>تطوير الواجهة الأمامية</h3>
+                    <div class="skill" data-percent="95">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percent="90">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percent="85">
+                        <div class="skill-name">
+                            <span>React</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>تطوير الواجهة الخلفية</h3>
+                    <div class="skill" data-percent="85">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percent="80">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percent="75">
+                        <div class="skill-name">
+                            <span>PHP</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>أخرى</h3>
+                    <div class="skill" data-percent="90">
+                        <div class="skill-name">
+                            <span>Flutter</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percent="80">
+                        <div class="skill-name">
+                            <span>Git</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                    <div class="skill" data-percent="70">
+                        <div class="skill-name">
+                            <span>Docker</span>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <div class="header-line"></div>
+            </div>
+            <h1 class="asd123">المشاريع</h1>
+
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="asd">
+                        <img src="Screenshot 2025-04-11 162043.png" alt="مشروع 1" class="asd">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>متجر اكتروني</h3>
+                        <p>  منجر اكتروني متكامل مبني باستخدام React وNode.js</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-04-11 162821.png"مشروع 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>تطبيق الهاتف</h3>
+                        <p>تطبيق هاتف لإدارة المهام مع ميزات متقدمة</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h1 class="asd123">اتصل بي</h1>
+                <div class="header-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>تواصل معي</h3>
+                    <p>إذا كنت مهتمًا بالعمل معي أو لديك أي استفسار، لا تتردد في التواصل.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>hamdy8888.ah@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0551807954</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>الرياض , السعوديه</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/people/Hamdy-Ayman/pfbid0dad3qqZfY68smkxcQATTqvbGEq8eviqtqcCskhArPKy5moxJFdjxTiNVDVFKoTpil/" class="social-icon"><i class="fab fa-facebook-f"></i></a>                 
+                               <a href="https://wa.me/+966551807954" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                
+                <div>HAMDY AYMAN</div>
+            </div>
+            <p>© 2025 جميع الحقوق محفوظة | حمدي أيمن</p>
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">عنّي</a>
+                <a href="#skills">المهارات</a>
+                <a href="#projects">المشاريع</a>
+                <a href="#contact">اتصل بي</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
