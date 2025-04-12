@@ -281,6 +281,7 @@ section {
 
 .btn-3d {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 33px
 }
 
 .btn-3d:hover {
